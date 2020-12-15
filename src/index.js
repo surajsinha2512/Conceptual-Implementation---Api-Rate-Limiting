@@ -40,6 +40,8 @@ app.get('/api/posts',(req,res)=>{
           initialMax=null;
           numberofApiCalls=0;
         },3*10000)
+    }else{
+        numberofApiCalls++;
     }
 })
 
